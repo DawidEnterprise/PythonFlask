@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Menu</title>
+</head>
+<body>
+    <h1>Welcome to the Menu</h1>
+
+    <!-- Form to add food -->
+    <h2>Add Food</h2>
+    <form action="/add_food" method="post">
+        <label for="food_name">Food Name:</label>
+        <input type="text" name="food_name" required><br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="quantity" required><br>
+        <label for="expiry_date">Expiry Date:</label>
+        <input type="date" name="expiry_date" required><br>
+        <input type="submit" value="Add Food">
+    </form>
+
+    <!-- Form to delete food -->
+    <h2>Delete Food</h2>
+    <form action="/delete_food" method="post">
+        <label for="food_to_delete">Search for Food:</label>
+        <input type="text" name="food_to_delete" required><br>
+        <input type="submit" value="Delete Food">
+    </form>
+
+    <ul>
+        <!-- Display a list of all foods here -->
+    </ul>
+</body>
+</html>
